@@ -56,7 +56,7 @@ for agent in agents:
     try:
         run = project_client.agents.create_and_process_run(
             thread_id=thread.id,
-            assistant_id=agent.id
+            agent_id=agent.id
         )
     except Exception as e:
         print(f"❌ Error processing run for agent '{agent.name}': {e}")
